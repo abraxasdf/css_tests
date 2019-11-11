@@ -1,0 +1,110 @@
+
+body{margin: 0px}
+
+.main_container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.card{
+  border:1px solid black;
+  background-color: white;
+  position: absolute;
+  width: 20vw;
+  height: 30vh;
+  overflow: hidden;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  transition: background-color 1s;
+}
+  
+.titulo{ 
+  font-size: 5vw;
+  width: 41vw;
+  top: 10px;
+  position: relative; 
+  transition: color 1s;
+  pointer-events: none;  
+  -moz-transform:  translateX(30%);  /* Firefox bug fix */
+  -webkit-transform:  translateX(30%);  /* Firefox bug fix */
+  transform:  translateX(30%); 	
+}
+
+.inner_titulo{
+  display: inline-block;
+}
+
+.inner_titulo::after {
+  content: attr(title);
+  position: absolute;
+  left: 131%;
+  top: 0;
+  width: 100%;
+}
+
+.subtitulo{
+  font-size: 3vw;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  transition: color 1s;
+  pointer-events: none;
+}
+
+
+.text{
+  font-size: 2.25vw;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  transition: color 1s;
+  pointer-events: none;
+}
+
+.card:hover{
+  background-color: black;
+}
+
+
+.card:hover .subtitulo{
+  color:white;
+}
+
+
+.card:hover .text{
+  color:white;
+}
+
+
+.card:hover .titulo{
+  color:white; 
+}
+  
+
+.card:hover.animateleft .titulo{ 
+  -moz-animation: marqueetext 10s linear infinite;
+  -webkit-animation: marqueetext 10s linear infinite;
+  animation: marqueetext 10s linear infinite;
+}
+
+@-moz-keyframes marqueetext {
+  0%   { -moz-transform:   translateX(30%); }
+  100% { -moz-transform:   translateX(-100%); }
+ }
+ @-webkit-keyframes marqueetext {
+  0%   { -webkit-transform:  translateX(30%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes marqueetext {
+  0%   { 
+  -moz-transform:  translateX(30%);  /* Firefox bug fix */
+  -webkit-transform:  translateX(30%);  /* Firefox bug fix */
+  transform:  translateX(30%); 	
+  }
+  100% { 
+  -moz-transform: translateX(-100%);  /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+
+ 
