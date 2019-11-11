@@ -1,0 +1,39 @@
+
+
+
+body{margin: 0px}
+
+.main_container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+} 
+
+.circulo1{
+  width: 30vw;
+    height: 30vw;
+    shape-outside: circle(50%);
+    float: left; 
+}
+
+.separator{
+  width: 100vw;
+  height: 5px;
+  background-color: #fb1010;
+}
+  
+
+.circulo2{
+  width: 33vw;
+  height: 43vw;
+    shape-outside: polygon(61% 0%, 98% 42%, 64% 98%, 88% 100%);
+    float: left; 
+}
+
+
+.circulo3{
+  width: 30vw;
+    height: 30vw;
+    shape-outside: url(figuras.png);
+    float: left; 
+}
