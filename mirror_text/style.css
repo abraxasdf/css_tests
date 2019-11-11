@@ -1,0 +1,112 @@
+
+
+
+body{margin: 0px}
+
+.main_container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.left_side{
+  background-color: white;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+ 
+.right_side{
+  background-color: black;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0px;
+  overflow: hidden;
+}
+ 
+
+.texto{
+  font-family: 'Lora', serif;
+  font-size: 6vw;
+  position: absolute;
+  top: 0px;
+  width: 201vw;
+  height: 6vw;
+}
+
+
+
+ #text_left{ 
+
+  /* Starting position */
+  -moz-transform: rotate(-45deg) translateX(-100%);
+  -webkit-transform: rotate(-45deg) translateX(-100%);	
+  transform: rotate(-45deg) translateX(-100%);
+  /* Apply animation to this element */
+  -moz-animation: marqueetext 15s linear infinite;
+  -webkit-animation: marqueetext 15s linear infinite;
+  animation: marqueetext 15s linear infinite;
+  	
+ }
+
+
+#text_right{ color: white;
+  top: calc(160vh - 6vw);
+  /* Starting position */
+  -moz-transform:rotate(45deg) translateX(-132%);
+  -webkit-transform:rotate(45deg) translateX(-132%);	
+  transform: rotate(45deg)  translateX(-132%);
+  /* Apply animation to this element */
+  -moz-animation: marqueetext_right 15s linear infinite;
+  -webkit-animation: marqueetext_right 15s linear infinite;
+  animation: marqueetext_right 15s linear infinite;
+ 
+}
+
+
+
+
+@-moz-keyframes marqueetext {
+  0%   { -moz-transform: rotate(-45deg)  translateX(-100%); }
+  100% { -moz-transform: rotate(-45deg)  translateX(100%); }
+ }
+ @-webkit-keyframes marqueetext {
+  0%   { -webkit-transform: rotate(-45deg)  translateX(-100%); }
+  100% { -webkit-transform:rotate(-45deg)  translateX(100%); }
+ }
+ @keyframes marqueetext {
+  0%   { 
+  -moz-transform: rotate(-45deg) translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: rotate(-45deg) translateX(-100%); /* Firefox bug fix */
+  transform: rotate(-45deg) translateX(-100%); 		
+  }
+  100% { 
+  -moz-transform: rotate(-45deg) translateX(100%); /* Firefox bug fix */
+  -webkit-transform: rotate(-45deg) translateX(100%); /* Firefox bug fix */
+  transform: rotate(-45deg) translateX(100%); 
+  }
+ }
+
+
+@-moz-keyframes marqueetext_right {
+  0%   { -moz-transform: rotate(45deg)  translateX(-132%); }
+  100% { -moz-transform: rotate(45deg)  translateX(68%); }
+ }
+ @-webkit-keyframes marqueetext_right {
+  0%   { -webkit-transform: rotate(45deg)  translateX(-132%); }
+  100% { -webkit-transform:rotate(45deg)  translateX(68%); }
+ }
+ @keyframes marquemarqueetext_marqueetext_rightrightetext {
+  0%   { 
+  -moz-transform: rotate(45deg) translateX(-132%); /* Firefox bug fix */
+  -webkit-transform: rotate(45deg) translateX(-132%); /* Firefox bug fix */
+  transform: rotate(45deg) translateX(-132%); 		
+  }
+  100% { 
+  -moz-transform: rotate(45deg) translateX(68%); /* Firefox bug fix */
+  -webkit-transform: rotate(45deg) translateX(68%); /* Firefox bug fix */
+  transform: rotate(45deg) translateX(68%); 
+  }
+ }
