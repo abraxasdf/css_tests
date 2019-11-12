@@ -1,0 +1,54 @@
+
+
+
+body{margin: 0px}
+
+.main_container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: lightblue;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  overflow: hidden;
+}
+section {
+  background: lightgray;
+}
+p {
+  font-size: 2vw;
+  line-height: 2vw;
+  background:  url(diana.webp) no-repeat;
+/*   Artwork by Xaviera López */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0) ;
+  font-weight: 900;
+  margin: 0;
+  mix-blend-mode: darken;
+}
+footer {
+position: fixed;
+top: 0;
+right: 0;
+padding: 10px;
+border-bottom-left-radius: 8px;
+height: 10px;
+display: flex;
+justify-content: center;
+}
+footer a {
+color: black;
+text-decoration: none;
+font-weight: 600;
+display: flex;
+  align-items: center;
+}
+
