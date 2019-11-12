@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="style.css" >    
+  </head>
+  <body>  
+      <div class="main_container">   
+        <div class="switch" onclick="switchon(this)">
+            <div class="activated"></div>
+            <div class="yin"></div>
+            <div class="yang"></div>
+        </div>
+      </div>
+    <script>   
+
+    function switchon(_this){
+      if(_this.classList.contains('active')){
+        _this.className = 'switch active0';
+        setTimeout(function(){ _this.className = 'switch';   },500)      
+      }else{
+        _this.className = 'switch active0';
+        setTimeout(function(){ _this.className = 'switch active';   },500)
+          
+      }
+    }
+    </script>
+  </body> 
+</html>
